@@ -1,0 +1,46 @@
+<?php
+require __DIR__ . '/database/albums.php';
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Dischi</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <link rel="stylesheet" href="./dist/css/style.css">
+</head>
+<body>
+    
+    <header>
+        <img src="./dist/img/logo-small.svg" alt="spotify_logo">
+    </header>
+    <main>
+        <!-- <div id="app">
+            <div class="disc" v-for="element in dischi">
+                <img :src="element.poster" alt="">
+                <div class="title">{{element.title}}</div>
+                <div class="disc_foot">
+                    <div class="author">{{element.author}}</div>
+                    <div class="year">{{element.year}}</div>
+                </div>
+                
+            </div>
+        </div> -->
+    </main>
+    
+    
+
+    <!-- CDN VUE -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- AXION CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JS SCRIPT -->
+    <script src="./dist/js/main.js"></script>
+</body>
+</html> 
