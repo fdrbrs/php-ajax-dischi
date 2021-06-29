@@ -22,9 +22,10 @@ require __DIR__ . '/database/albums.php';
     </header>
     <main>
         <div id="app">
-            <div class="disc">
+            
 
             <?php foreach ($albums as $album) : ?>
+            <div class="disc">
 
                 <img src="<?=$album['poster']; ?>" alt="">
                 <div class="title"><?=$album['title']; ?></div>
@@ -32,9 +33,10 @@ require __DIR__ . '/database/albums.php';
                     <div class="author"><?=$album['author']; ?></div>
                     <div class="year"><?=$album['year']; ?></div>
                 </div>
-
-            <?php endforeach; ?>
+            
             </div>
+            <?php endforeach; ?>
+            
         </div>
     </main>
     
